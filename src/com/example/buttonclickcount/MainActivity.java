@@ -38,7 +38,8 @@ public class MainActivity extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
-			Toast toastMessage = Toast.makeText(this, "The settings menu item was tapped", Toast.LENGTH_LONG);
+			Toast toastMessage = Toast.makeText(this, "The settings menu item was tapped and button text is " + theTextView.getText(), Toast.LENGTH_LONG);
+			theTextView.setText("Zero");
 			toastMessage.show();
 			return true;
 		}
